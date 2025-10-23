@@ -9,7 +9,7 @@ pipeline {
 
     stage('Build Docker image') {
       steps {
-        sh 'docker build -t ${IMAGE}:${TS} -t ${IMAGE}:latest .'
+        sh 'docker build -t ${IMAGE}:0.1-${TS} -t ${IMAGE}:latest .'
       }
     }
 
