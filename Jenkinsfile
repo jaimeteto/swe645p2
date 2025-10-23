@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    IMAGE = "jaimeteto/studentsurvey645:0.1"
+    IMAGE = "jaimeteto/studentsurvey645"
     TS    = sh(script: "date +%Y%m%d-%H%M%S", returnStdout: true).trim()
   }
   stages {
